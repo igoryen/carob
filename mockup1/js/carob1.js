@@ -39,7 +39,7 @@ $( document ).ready(function() {
 
     	
     	// $( this ).siblings(".brian").toggleClass("flex-on");
-    	$( this ).children(".david").hide( "fade", options, 500); // v1
+    	$( this ).children(".david").hide( "fade", options, 100); // v1
     	// $( this ).children(".david").hide( "fade", show_donald( $(this)), 100); // v2
     	// $( this ).children(".david").hide("fade", options, 1000, show_donald( $( this )));
     	// .find(".brian")

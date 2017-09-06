@@ -3,8 +3,7 @@ body {
 
 .barbara {
   align-items: center;
-  display: flex;
-  margin: 1em 0; }
+  display: flex; }
 
 .christopher {
   display: inline-block;
@@ -89,7 +88,7 @@ body {
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
   .logo-frame:hover {
-    transform: scale(1.2); }
+    transform: scale(1.1); }
 
 .logo-frame--large {
   background: transparent no-repeat center;
