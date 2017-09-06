@@ -1,0 +1,357 @@
+//==============
+// DEBUG
+//===============
+
+///
+// .donna {
+// 	border: 5px solid #ccc;
+// 	margin: 1em;
+// }
+
+// .david {
+// 	border: 5px solid #808080;
+// 	margin: 1em;
+// }
+
+// .edward {
+// 	border: 5px solid #a6a6a6;
+// 	margin: 1em;
+// }
+
+//==============
+// MIXINS
+
+@mixin transition-all() {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+//============
+// GLOBAL
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+
+
+.donna {
+	display: flex;
+}
+
+
+
+.david {
+	// display: none;
+	display: flex;
+	margin-left: .5em;
+}
+
+.brian {
+	display: flex;
+	flex-direction: column;
+}
+.charles {
+	display: flex;
+	margin: .1em;
+	justify-content: flex-start;
+}
+
+.charles {
+	a {
+		align-items: center;
+		display: flex;
+		margin: .3em;
+		justify-content: flex-start;
+
+		text-decoration: none;
+		color: #999;
+		@include transition-all(); // added to the element itself rather than to the pseudo-class
+
+		&:hover {
+			color: #333;
+			
+		}
+	}
+}
+
+
+
+
+
+
+.logo-frame {
+	width: 200px;
+    height: 70px;
+
+    @include transition-all();
+    &:hover {
+    	transform: scale(1.1);
+    	
+    }
+}
+
+.logo-frame--large {
+	// height: 130px;
+	background: transparent no-repeat center;
+	background-size: cover;
+}
+
+.logo-frame__nrs {
+	background-image: url(../images/NRS_Bottom_Color.png);
+	width: 160px;
+}
+
+.logo-frame__nas {
+	background-image: url(../images/NAS_Bottom_Color-b.png);
+	width: 140px;
+}
+
+.logo-frame__hcs {
+	background-image: url(../images/HCS_logo.png);
+	width: 160px;
+}
+
+.logo-frame__ihusa {
+	background-image: url(../images/in_house_usa_logo.png);
+}
+
+.logo-frame__neuro {
+	background-image: url(../images/neuro_logo.jpg);
+	width: 130px;
+}
+
+//======================
+// TABS
+//======================
+
+#tabs {
+	width: 600px;
+	display: flex;
+}
+.dorothy {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+// tablet with the logo on it.
+.deborah {
+
+    // box-shadow: inset -2px -1px 10px 0px #ccc;
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #d9d9d9;
+    border-left: 1px solid #d9d9d9;
+    border-radius: 10px 0 0 10px;
+    border-top: 1px solid #d9d9d9;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    margin: .2em 0 .2em 1em;
+    overflow: hidden; // image will not fly out of the frame when scaled
+    padding: .3em;
+    width: 13em;
+
+
+}
+
+.edward {
+	&.ui-state-active.ui-tabs-active {
+		.deborah {
+			border-right: none;
+			background-color: #e6f2ff;
+			// box-shadow: inset 4px 0px 2px 0px #ccc;
+			// border-top: 1px solid #ccc;
+
+			// border-radius: 5px 0 0 5px;	
+			// border: none;
+			// box-shadow: -4px 0px 2px 1px #ccc;
+		}		
+	}
+}
+
+//==============
+
+.elizabeth {
+	border-left: 1px solid #d9d9d9;
+	border-radius: 5px 0 0 5px;
+}
+
+//======================
+// COUNTRY BALLS
+//======================
+.christopher {	
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	margin-right: .3em;
+}
+.christopher__ca {
+	
+	background: url(../images/flags2.jpg) -177px 0px;
+	background-size: 490px auto;
+
+}
+
+
+.christopher__us {
+	
+	background: url(../images/flags2.jpg) -295px -59px;
+	background-size: 490px auto;
+
+}
+
+.christopher__jm {
+	
+	background: url(../images/flags2.jpg) -295px -20px;
+	background-size: 490px auto;
+
+}
+
+.christopher__ru {
+	
+	background: url(../images/flags2.jpg) -471px -40px;
+	background-size: 490px auto;
+
+}
+
+.christopher__dk {
+	
+	background: url(../images/flags2.jpg) -314px 0px;
+	background-size: 490px auto;
+
+}
+
+.christopher__ch {
+	
+	background: url(../images/flags2.jpg)  -156px -58px;
+	background-size: 490px auto;
+
+}
+
+.christopher__ar {
+	
+	background: url(../images/flags2.jpg)  -20px 0px;
+	background-size: 490px auto;
+
+}
+
+.christopher__au {
+	
+	background: url(../images/flags2.jpg)  -39px 0px;
+	background-size: 490px auto;
+
+}
+.christopher__ad {
+	
+	background: url(../images/flags2.jpg)  0px 0px;
+	background-size: 490px auto;
+
+}
+.christopher__br {
+	
+	background: url(../images/flags2.jpg)  -118px 0px;
+	background-size: 490px auto;
+
+}
+.christopher__bg {
+	
+	background: url(../images/flags2.jpg)  -137px 0px;
+	background-size: 490px auto;
+
+}
+.christopher__de {
+	
+	background: url(../images/flags2.jpg)  -20px -19px;
+	background-size: 490px auto;
+
+}
+.christopher__gr {
+	
+	background: url(../images/flags2.jpg) -39px -19px;
+	background-size: 490px auto;
+
+}
+.christopher__gt {
+	
+	background: url(../images/flags2.jpg) -58px -19px;
+	background-size: 490px auto;
+
+}
+.christopher__hk {
+	
+	background: url(../images/flags2.jpg) -137px -19px;
+	background-size: 490px auto;
+
+}
+.christopher__il {
+	
+	background: url(../images/flags2.jpg) -236px -19px;
+	background-size: 490px auto;
+
+}
+.christopher__kr {
+	
+	background: url(../images/flags2.jpg)  -373px -19px;
+	background-size: 490px auto;
+
+}
+.christopher__tw {
+	
+	background: url(../images/flags2.jpg) -177px -58px;
+	background-size: 490px auto;
+
+}
+.christopher__tr {
+	
+	background: url(../images/flags2.jpg) -216px -58px;
+	background-size: 490px auto;
+
+}
+.christopher__gb {
+	
+	background: url(../images/flags2.jpg)  -255px -58px;
+	background-size: 490px auto;
+
+}
+.christopher__se {
+	
+	background: url(../images/flags2.jpg)  -137px -58px;
+	background-size: 490px auto;
+
+}
+.christopher__vn {
+	
+	background: url(../images/flags2.jpg) -353px -58px;
+	background-size: 490px auto;
+
+}
+.christopher__cm {
+	
+	background: url(../images/flags2.jpg) -156px 0px;
+	background-size: 490px auto;
+
+}
+.christopher__jp {
+	
+	background: url(../images/flags2.jpg) -314px -19px;
+	background-size: 490px auto;
+
+}
+.christopher__lv {
+	
+	background: url(../images/flags2.jpg) -393px -19px;
+	background-size: 490px auto;
+
+}
+.christopher__sa {
+	
+	background: url(../images/flags2.jpg) 0px -58px;
+	background-size: 490px auto;
+
+}
