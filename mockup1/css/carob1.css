@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif; }
+
+.barbara {
+  align-items: center;
+  display: flex;
+  margin: 1em 0; }
+
+.christopher {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin-right: .3em; }
+
+.christopher__ca {
+  background: url(../images/flags2.jpg) -177px 0px;
+  background-size: 490px auto; }
+
+.christopher__us {
+  background: url(../images/flags2.jpg) -295px -59px;
+  background-size: 490px auto; }
+
+.christopher__jm {
+  background: url(../images/flags2.jpg) -295px -20px;
+  background-size: 490px auto; }
+
+.christopher__ru {
+  background: url(../images/flags2.jpg) -471px -40px;
+  background-size: 490px auto; }
+
+.christopher__dk {
+  background: url(../images/flags2.jpg) -314px 0px;
+  background-size: 490px auto; }
+
+.christopher__ch {
+  background: url(../images/flags2.jpg) -156px -58px;
+  background-size: 490px auto; }
+
+.betty {
+  display: flex;
+  align-items: center; }
+
+.carol {
+  display: flex;
+  flex-direction: column; }
+
+.david {
+  display: none;
+  margin-left: .5em; }
+
+.brian {
+  display: flex; }
+
+.charles {
+  display: flex;
+  margin: .1em;
+  justify-content: flex-start; }
+
+.charles a {
+  align-items: center;
+  display: flex;
+  margin: .3em;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: #999;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+  .charles a:hover {
+    color: #333; }
+
+.deborah {
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px 1px #ccc;
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  margin: .3em 0 .3em 1em;
+  overflow: hidden;
+  padding: .3em;
+  width: 13em; }
+
+.logo-frame {
+  width: 200px;
+  height: 70px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+  .logo-frame:hover {
+    transform: scale(1.2); }
+
+.logo-frame--large {
+  background: transparent no-repeat center;
+  background-size: cover; }
+
+.logo-frame__nrs {
+  background-image: url(../images/NRS_Bottom_Color.png);
+  width: 160px; }
+
+.logo-frame__nas {
+  background-image: url(../images/NAS_Bottom_Color-b.png);
+  width: 140px; }
+
+.logo-frame__hcs {
+  background-image: url(../images/HCS_logo.png);
+  width: 160px; }
+
+.logo-frame__ihusa {
+  background-image: url(../images/in_house_usa_logo.png); }
+
+.logo-frame__neuro {
+  background-image: url(../images/neuro_logo.jpg);
+  width: 130px; }
+
+.donald {
+  margin-left: 1em;
+  color: #666;
+  z-index: -10; }
+
+/*# sourceMappingURL=carob1.css.map */
