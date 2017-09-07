@@ -5,6 +5,18 @@ body {
   align-items: center;
   display: flex; }
 
+.divider {
+  height: 2px;
+  width: 100%;
+  background: rgba(226, 226, 226, 0.5);
+  background: -moz-linear-gradient(left, rgba(226, 226, 226, 0.5) 0%, rgba(219, 219, 219, 0.43) 15%, rgba(110, 100, 110, 0.25) 54%, rgba(254, 254, 254, 0.03) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(226, 226, 226, 0.5)), color-stop(15%, rgba(219, 219, 219, 0.43)), color-stop(54%, rgba(110, 100, 110, 0.25)), color-stop(100%, rgba(254, 254, 254, 0.03)));
+  background: -webkit-linear-gradient(left, rgba(226, 226, 226, 0.5) 0%, rgba(219, 219, 219, 0.43) 15%, rgba(110, 100, 110, 0.25) 54%, rgba(254, 254, 254, 0.03) 100%);
+  background: -o-linear-gradient(left, rgba(226, 226, 226, 0.5) 0%, rgba(219, 219, 219, 0.43) 15%, rgba(110, 100, 110, 0.25) 54%, rgba(254, 254, 254, 0.03) 100%);
+  background: -ms-linear-gradient(left, rgba(226, 226, 226, 0.5) 0%, rgba(219, 219, 219, 0.43) 15%, rgba(110, 100, 110, 0.25) 54%, rgba(254, 254, 254, 0.03) 100%);
+  background: linear-gradient(to right, rgba(226, 226, 226, 0.5) 0%, rgba(219, 219, 219, 0.43) 15%, rgba(110, 100, 110, 0.25) 54%, rgba(254, 254, 254, 0.03) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=1 ); }
+
 .christopher {
   display: inline-block;
   height: 20px;
@@ -95,7 +107,7 @@ body {
   background-size: cover; }
 
 .logo-frame__nrs {
-  background-image: url(../images/NRS_Bottom_Color.png);
+  background-image: url(../images/NRS_Bottom_Color_b.png);
   width: 160px; }
 
 .logo-frame__nas {
@@ -103,7 +115,7 @@ body {
   width: 140px; }
 
 .logo-frame__hcs {
-  background-image: url(../images/HCS_logo.png);
+  background-image: url(../images/hcs_logo.png);
   width: 160px; }
 
 .logo-frame__ihusa {
