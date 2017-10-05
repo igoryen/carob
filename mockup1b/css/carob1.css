@@ -1,0 +1,231 @@
+body {
+  font-family: Arial, sans-serif; }
+
+.barbara {
+  align-items: center;
+  display: flex; }
+
+.divider {
+  height: 2px;
+  width: 100%;
+  background: rgba(226, 226, 226, 0.5);
+  background: -moz-linear-gradient(left, rgba(226, 226, 226, 0.5) 0%, rgba(219, 219, 219, 0.43) 15%, rgba(110, 100, 110, 0.25) 54%, rgba(254, 254, 254, 0.03) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(226, 226, 226, 0.5)), color-stop(15%, rgba(219, 219, 219, 0.43)), color-stop(54%, rgba(110, 100, 110, 0.25)), color-stop(100%, rgba(254, 254, 254, 0.03)));
+  background: -webkit-linear-gradient(left, rgba(226, 226, 226, 0.5) 0%, rgba(219, 219, 219, 0.43) 15%, rgba(110, 100, 110, 0.25) 54%, rgba(254, 254, 254, 0.03) 100%);
+  background: -o-linear-gradient(left, rgba(226, 226, 226, 0.5) 0%, rgba(219, 219, 219, 0.43) 15%, rgba(110, 100, 110, 0.25) 54%, rgba(254, 254, 254, 0.03) 100%);
+  background: -ms-linear-gradient(left, rgba(226, 226, 226, 0.5) 0%, rgba(219, 219, 219, 0.43) 15%, rgba(110, 100, 110, 0.25) 54%, rgba(254, 254, 254, 0.03) 100%);
+  background: linear-gradient(to right, rgba(226, 226, 226, 0.5) 0%, rgba(219, 219, 219, 0.43) 15%, rgba(110, 100, 110, 0.25) 54%, rgba(254, 254, 254, 0.03) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=1 ); }
+
+.christopher {
+  box-shadow: 2px 2px 3px 0px #ccc;
+  display: inline-block;
+  height: 16px;
+  min-width: 32px;
+  margin-right: .8em; }
+
+.christopher__ai {
+  background: url(../images/countries/anguilla.png) 0px 0px;
+  background-size: 100% auto; }
+
+.christopher__bs {
+  background: url("../images/countries/flags3.png") -360px 0px;
+  background-size: 490px auto; }
+
+.christopher__bb {
+  background: url("../images/countries/flags3.png") -458px 0px;
+  background-size: 490px auto; }
+
+.christopher__bz {
+  background: url("../images/countries/flags3.png") -65px -16.5px;
+  background-size: 490px auto; }
+
+.christopher__ca {
+  background: url("../images/countries/flags3.png") -33px -33px;
+  background-size: 490px auto; }
+
+.christopher__ky {
+  background: url(../images/countries//cayman_islands.gif) 0px 0px;
+  background-size: 100% auto; }
+
+.christopher__cr {
+  background: url("../images/countries/flags3.png") -262px 32.7px;
+  background-size: 490px auto; }
+
+.christopher__dm {
+  background: url("../images/countries/flags3.png") -131px -49px;
+  background-size: 490px auto; }
+
+.christopher__gd {
+  background: url("../images/countries/flags3.png") -262px -65.5px;
+  background-size: 490px auto; }
+
+.christopher__gy {
+  background: url("../images/countries/flags3.png") -392px -65.5px;
+  background-size: 490px auto; }
+
+.christopher__ht {
+  background: url("../images/countries/flags3.png") -425px -65.5px;
+  background-size: 490px auto; }
+
+.christopher__jm {
+  background: url("../images/countries/flags3.png") -294px -82px;
+  background-size: 490px auto; }
+
+.christopher__mx {
+  background: url("../images/countries/flags3.png") -294px -114.5px;
+  background-size: 490px auto; }
+
+.christopher__kn {
+  background: url("../images/countries/flags3.png") 163px 65px;
+  background-size: 490px auto; }
+
+.christopher__lc {
+  background: url("../images/countries/flags3.png") 130px 65px;
+  background-size: 490px auto; }
+
+.christopher__vc {
+  background: url("../images/countries/flags3.png") 98px 65px;
+  background-size: 490px auto; }
+
+.christopher__tt {
+  background: url("../images/countries/flags3.png") 130px 32.5px;
+  background-size: 490px auto; }
+
+.christopher__tc {
+  background: url(../images/countries/turks_and_caicos_islands.gif) 0px 0px;
+  background-size: 100% auto; }
+
+.christopher__vg {
+  background: url(../images/countries/british_virgin_islands.png) 0px 0px;
+  background-size: 100% auto; }
+
+.christopher__ag {
+  background: url(../images/countries/british_virgin_islands.png) 0px 0px;
+  background-size: 100% auto; }
+
+.betty {
+  display: flex;
+  align-items: center; }
+
+.carol {
+  display: flex;
+  flex-direction: row; }
+  .carol.inhouse img {
+    width: 150px; }
+  .carol.caribbean {
+    flex-direction: column; }
+
+.david {
+  display: none;
+  margin-left: .5em; }
+
+.brian {
+  display: flex; }
+
+.charles {
+  display: flex;
+  flex-direction: column;
+  margin: .1em;
+  justify-content: flex-start;
+  position: relative;
+  align-self: baseline; }
+
+.donald {
+  align-items: center;
+  color: #bfbfbf;
+  display: flex;
+  justify-content: flex-start;
+  margin: .3em;
+  text-decoration: none;
+  width: 10em;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.deborah {
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px 1px #ccc;
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  margin: .3em 0 .3em 1em;
+  overflow: hidden;
+  padding: .3em;
+  width: 13em; }
+
+.logo-frame {
+  width: 200px;
+  height: 70px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  .logo-frame:hover {
+    transform: scale(1.1); }
+
+.logo-frame--large {
+  background: transparent no-repeat center;
+  background-size: cover; }
+
+.logo-frame__nrs {
+  background-image: url(../images/logos/NRS_Bottom_Color_b.png);
+  width: 160px; }
+
+.logo-frame__nas {
+  background-image: url(../images/logos/NAS_Bottom_Color-b.png);
+  width: 140px; }
+
+.logo-frame__hcs {
+  background-image: url(../images/logos/hcs_logo.png);
+  width: 160px; }
+
+.logo-frame__ihusa {
+  background-image: url(../images/logos/in_house_usa_logo.png); }
+
+.logo-frame__neuro {
+  background-image: url(../images/logos/neuro_logo.jpg);
+  width: 130px; }
+
+.donna {
+  display: none;
+  position: absolute;
+  top: 2em;
+  background-color: white;
+  padding: 0 .5em;
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  border-radius: 0 0 5px 5px; }
+  .donna a {
+    text-decoration: none;
+    color: #333; }
+  .donna.caribbean {
+    display: flex;
+    width: 22em;
+    margin-left: -16em; }
+
+.elizabeth {
+  display: flex;
+  margin: .5em .2em;
+  align-items: center;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  /* For IE8 and earlier */ }
+  .elizabeth:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* For IE8 and earlier */ }
+
+.george {
+  font-weight: bold; }
+
+.helen {
+  margin-right: 1em; }
+
+/*# sourceMappingURL=carob1.css.map */
