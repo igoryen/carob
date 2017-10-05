@@ -1,0 +1,302 @@
+body {
+  font-family: Arial, sans-serif; }
+
+.donna {
+  display: flex; }
+
+.ui-widget * {
+  outline: white !important; }
+
+.david {
+  display: flex;
+  margin-left: .5em; }
+
+.brian {
+  display: flex; }
+
+.charles {
+  display: flex;
+  margin: .1em;
+  justify-content: flex-start; }
+
+.charles a {
+  align-items: center;
+  display: flex;
+  margin: .3em;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: #999;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  .charles a:hover {
+    color: #333; }
+
+.logo-frame {
+  width: 200px;
+  height: 70px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.logo-frame--large {
+  background: transparent no-repeat center;
+  background-size: cover; }
+
+.logo-frame__nrs {
+  background-image: url(../images/logos/nrs_logo.png);
+  width: 160px;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%); }
+
+.logo-frame__nas {
+  background-image: url(../images/logos/nas_logo.png);
+  width: 140px;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%); }
+
+.logo-frame__hcs {
+  background-image: url(../images/logos/hcs_logo.png);
+  width: 160px;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%); }
+
+.logo-frame__ihusa {
+  background-image: url(../images/logos/in_house_usa_logo.png);
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%); }
+
+.logo-frame__neuro {
+  background-image: url(../images/logos/neuro_logo.jpg);
+  width: 130px;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%); }
+
+#tabs {
+  width: 600px;
+  display: flex; }
+
+.dorothy {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.deborah {
+  background-color: #fcfcfc;
+  border-bottom: 1px solid #d9d9d9;
+  border-left: 1px solid #d9d9d9;
+  border-radius: 10px 0 0 10px;
+  border-top: 1px solid #d9d9d9;
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  margin: .2em 0 .2em 1em;
+  overflow: hidden;
+  padding: .3em;
+  width: 13em; }
+
+.edward.ui-state-active.ui-tabs-active .deborah {
+  border-right: none; }
+
+.elizabeth {
+  border-left: 1px solid #d9d9d9;
+  border-radius: 5px 0 0 5px; }
+
+.carol {
+  width: 13em; }
+  .carol.inhouse {
+    flex-direction: row; }
+    .carol.inhouse img {
+      width: 150px; }
+
+.christopher {
+  box-shadow: 2px 2px 3px 0px #ccc;
+  display: inline-block;
+  height: 16px;
+  width: 32px;
+  margin-right: .8em; }
+
+.christopher__ai {
+  background: url(../images/countries/anguilla.png) 0px 0px;
+  background-size: 100% auto; }
+
+.christopher__bs {
+  background: url("../images/countries/flags3.png") -360px 0px;
+  background-size: 490px auto; }
+
+.christopher__bb {
+  background: url("../images/countries/flags3.png") -458px 0px;
+  background-size: 490px auto; }
+
+.christopher__bz {
+  background: url("../images/countries/flags3.png") -65px -16.5px;
+  background-size: 490px auto; }
+
+.christopher__ca {
+  background: url("../images/countries/flags3.png") -33px -33px;
+  background-size: 490px auto; }
+
+.christopher__ky {
+  background: url(../images/countries/cayman_islands.gif) 0px 0px;
+  background-size: 100% auto; }
+
+.christopher__cr {
+  background: url("../images/countries/flags3.png") -262px 32.7px;
+  background-size: 490px auto; }
+
+.christopher__dm {
+  background: url("../images/countries/flags3.png") -131px -49px;
+  background-size: 490px auto; }
+
+.christopher__gd {
+  background: url("../images/countries/flags3.png") -262px -65.5px;
+  background-size: 490px auto; }
+
+.christopher__gy {
+  background: url("../images/countries/flags3.png") -392px -65.5px;
+  background-size: 490px auto; }
+
+.christopher__ht {
+  background: url("../images/countries/flags3.png") -425px -65.5px;
+  background-size: 490px auto; }
+
+.christopher__jm {
+  background: url("../images/countries/flags3.png") -294px -82px;
+  background-size: 490px auto; }
+
+.christopher__mx {
+  background: url("../images/countries/flags3.png") -294px -114.5px;
+  background-size: 490px auto; }
+
+.christopher__kn {
+  background: url("../images/countries/flags3.png") 163px 65px;
+  background-size: 490px auto; }
+
+.christopher__lc {
+  background: url("../images/countries/flags3.png") 130px 65px;
+  background-size: 490px auto; }
+
+.christopher__vc {
+  background: url("../images/countries/flags3.png") 98px 65px;
+  background-size: 490px auto; }
+
+.christopher__tt {
+  background: url("../images/countries/flags3.png") 130px 32.5px;
+  background-size: 490px auto; }
+
+.christopher__tc {
+  background: url(../images/countries/turks_and_caicos_islands.gif) 0px 0px;
+  background-size: 100% auto; }
+
+.christopher__vg {
+  background: url(../images/countries/british_virgin_islands.png) 0px 0px;
+  background-size: 100% auto; }
+
+.christopher__dk {
+  background: url("../images/countries/flags3.png") -314px 0px;
+  background-size: 490px auto; }
+
+.christopher__ch {
+  background: url("../images/countries/flags3.png") -156px -58px;
+  background-size: 490px auto; }
+
+.christopher__ar {
+  background: url("../images/countries/flags3.png") -20px 0px;
+  background-size: 490px auto; }
+
+.christopher__au {
+  background: url("../images/countries/flags3.png") -39px 0px;
+  background-size: 490px auto; }
+
+.christopher__ad {
+  background: url("../images/countries/flags3.png") 0px 0px;
+  background-size: 490px auto; }
+
+.christopher__br {
+  background: url("../images/countries/flags3.png") -118px 0px;
+  background-size: 490px auto; }
+
+.christopher__bg {
+  background: url("../images/countries/flags3.png") -137px 0px;
+  background-size: 490px auto; }
+
+.christopher__de {
+  background: url("../images/countries/flags3.png") -20px -19px;
+  background-size: 490px auto; }
+
+.christopher__gr {
+  background: url("../images/countries/flags3.png") -39px -19px;
+  background-size: 490px auto; }
+
+.christopher__gt {
+  background: url("../images/countries/flags3.png") -58px -19px;
+  background-size: 490px auto; }
+
+.christopher__hk {
+  background: url("../images/countries/flags3.png") -137px -19px;
+  background-size: 490px auto; }
+
+.christopher__il {
+  background: url("../images/countries/flags3.png") -236px -19px;
+  background-size: 490px auto; }
+
+.christopher__kr {
+  background: url("../images/countries/flags3.png") -373px -19px;
+  background-size: 490px auto; }
+
+.christopher__tw {
+  background: url("../images/countries/flags3.png") -177px -58px;
+  background-size: 490px auto; }
+
+.christopher__tr {
+  background: url("../images/countries/flags3.png") -216px -58px;
+  background-size: 490px auto; }
+
+.christopher__gb {
+  background: url("../images/countries/flags3.png") -255px -58px;
+  background-size: 490px auto; }
+
+.christopher__se {
+  background: url("../images/countries/flags3.png") -137px -58px;
+  background-size: 490px auto; }
+
+.christopher__vn {
+  background: url("../images/countries/flags3.png") -353px -58px;
+  background-size: 490px auto; }
+
+.christopher__cm {
+  background: url("../images/countries/flags3.png") -156px 0px;
+  background-size: 490px auto; }
+
+.christopher__jp {
+  background: url("../images/countries/flags3.png") -314px -19px;
+  background-size: 490px auto; }
+
+.christopher__lv {
+  background: url("../images/countries/flags3.png") -393px -19px;
+  background-size: 490px auto; }
+
+.christopher__sa {
+  background: url("../images/countries/flags3.png") 0px -58px;
+  background-size: 490px auto; }
+
+/*# sourceMappingURL=carob4.css.map */

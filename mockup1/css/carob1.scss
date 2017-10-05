@@ -34,11 +34,24 @@
 
 // }
 
-// .charles {
-// 	display: flex;
-// 	margin: 3px;
+.charles {
+	// display: flex;
+	// margin: 3px;
+	// background-color: yellow;
 
-// }
+}
+
+.donald {
+		// background-color: yellow;
+}
+
+//================
+// 	VARIABLES
+//================
+
+	$sprite-path: "../images/countries/flags3.png";
+	$countries: "../images/countries";
+	$logos: "../images/logos";
 
 
 //==============
@@ -49,11 +62,19 @@
 // MIXINS
 
 @mixin transition-all() {
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
+
+@mixin transition-all-quick() {
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
 
 //============
 
@@ -89,54 +110,144 @@ body {
 
 // COUNTRY BALLS
 
+// .christopher {	
+// 	display: inline-block;
+// 	height: 20px;
+// 	width: 20px;
+// 	margin-right: .3em;
+// }
 .christopher {	
+	box-shadow: 2px 2px 3px 0px #ccc;
 	display: inline-block;
-	height: 20px;
-	width: 20px;
-	margin-right: .3em;
+	height: 16px;
+	min-width: 32px;
+	margin-right: .8em;
 }
+
+.christopher__ai {
+	
+	background: url(#{$countries}/anguilla.png) -0px -0px;
+	background-size: 100% auto;
+
+}
+
+.christopher__bs {
+	
+	background: url($sprite-path) -360px 0px;
+	background-size: 490px auto;
+
+}
+
+.christopher__bb {
+	
+	background: url($sprite-path) -458px 0px;
+	background-size: 490px auto;
+
+}
+
+.christopher__bz {
+	
+	background: url($sprite-path) -65px -16.5px;
+	background-size: 490px auto;
+
+}
+
 .christopher__ca {
 	
-	background: url(../images/flags2.jpg) -177px 0px;
+	background: url($sprite-path) -33px -33px;
+	background-size: 490px auto;
+
+}
+
+.christopher__ky {
+	
+	background: url(#{$countries}//cayman_islands.gif) -0px -0px;
+	background-size: 100% auto;
+
+}
+
+.christopher__cr {
+	
+	background: url($sprite-path) -262px 32.7px;
+	background-size: 490px auto;
+
+}
+
+.christopher__dm {
+	
+	background: url($sprite-path) -131px -49px;
 	background-size: 490px auto;
 
 }
 
 
-.christopher__us {
+.christopher__gd {
 	
-	background: url(../images/flags2.jpg) -295px -59px;
+	background: url($sprite-path) -262px -65.5px;
+	background-size: 490px auto;
+
+}
+
+.christopher__gy {
+	
+	background: url($sprite-path) -392px -65.5px;
+	background-size: 490px auto;
+
+}
+
+.christopher__ht {
+	
+	background: url($sprite-path) -425px -65.5px;
 	background-size: 490px auto;
 
 }
 
 .christopher__jm {
 	
-	background: url(../images/flags2.jpg) -295px -20px;
+	background: url($sprite-path) -294px -82px;
 	background-size: 490px auto;
 
 }
-
-.christopher__ru {
-	
-	background: url(../images/flags2.jpg) -471px -40px;
+.christopher__mx {	
+	background: url($sprite-path) -294px -114.5px;
 	background-size: 490px auto;
-
 }
 
-.christopher__dk {
-	
-	background: url(../images/flags2.jpg) -314px 0px;
+.christopher__kn {	
+	background: url($sprite-path) 163px 65px;
 	background-size: 490px auto;
-
 }
 
-.christopher__ch {
-	
-	background: url(../images/flags2.jpg)  -156px -58px;
-	background-size: 490px auto;
 
+.christopher__lc {	
+	background: url($sprite-path) 130px 65px;
+	background-size: 490px auto;
 }
+
+.christopher__vc {	
+	background: url($sprite-path) 98px 65px;
+	background-size: 490px auto;
+}
+
+.christopher__tt {	
+	background: url($sprite-path) 130px 32.5px;
+	background-size: 490px auto;
+}
+
+.christopher__tc {	
+	background: url(#{$countries}/turks_and_caicos_islands.gif) -0px -0px;
+	background-size: 100% auto;
+}
+
+.christopher__vg {	
+	background: url(#{$countries}/british_virgin_islands.png) -0px -0px;
+	background-size: 100% auto;
+}
+.christopher__ag {	
+	background: url(#{$countries}/british_virgin_islands.png) -0px -0px;
+	background-size: 100% auto;
+}
+
 
 
 
@@ -150,12 +261,30 @@ body {
 }
 .carol {
 	display: flex;
-    flex-direction: column;
+    flex-direction: row;
+
+    &.inhouse {
+    	// flex-direction: column;
+    	img {
+    		width: 150px;
+    	}
+    }
+    &.caribbean {
+    	flex-direction: column;
+    }
 }
 
 .david {
-	display: none;
+	// display: flex; // <<<
+	display: none; 
+
 	margin-left: .5em;
+
+	// color: #bfbfbf;
+
+	// &:hover {
+	// 	color: #333;
+	// }
 }
 
 .brian {
@@ -163,25 +292,44 @@ body {
 }
 .charles {
 	display: flex;
+	flex-direction: column;
 	margin: .1em;
 	justify-content: flex-start;
+	position: relative;
+	align-self: baseline;
+
+	// color: #bfbfbf;
+
+	// &:hover {
+	// 	color: #333;
+	// }
+
 }
 
-.charles {
-	a {
-		align-items: center;
-		display: flex;
-		margin: .3em;
-		justify-content: flex-start;
+.donald {
 
-		text-decoration: none;
-		color: #999;
-		@include transition-all(); // added to the element itself rather than to the pseudo-class
 
-		&:hover {
-			color: #333;
-			
-		}
+
+
+
+	// color: #666;
+	// margin-left: 1em;
+	// z-index: -10;
+	align-items: center;
+	color: #bfbfbf;
+	// color: #bfbfbf;
+	display: flex;
+	justify-content: flex-start;
+	margin: .3em;
+	text-decoration: none;
+	width: 10em;
+
+
+	@include transition-all(); // added to the element itself rather than to the pseudo-class
+
+	&:hover {
+		// color: #333;
+		
 	}
 }
 
@@ -218,33 +366,115 @@ body {
 }
 
 .logo-frame__nrs {
-	background-image: url(../images/NRS_Bottom_Color_b.png);
+	background-image: url(#{$logos}/NRS_Bottom_Color_b.png);
 	width: 160px;
 }
 
 .logo-frame__nas {
-	background-image: url(../images/NAS_Bottom_Color-b.png);
+	background-image: url(#{$logos}/NAS_Bottom_Color-b.png);
 	width: 140px;
 }
 
 .logo-frame__hcs {
-	background-image: url(../images/hcs_logo.png);
+	background-image: url(#{$logos}/hcs_logo.png);
 	width: 160px;
 }
 
 .logo-frame__ihusa {
-	background-image: url(../images/in_house_usa_logo.png);
+	background-image: url(#{$logos}/in_house_usa_logo.png);
 }
 
 .logo-frame__neuro {
-	background-image: url(../images/neuro_logo.jpg);
+	background-image: url(#{$logos}/neuro_logo.jpg);
 	width: 130px;
 }
 
 
 
 .donald {
-	margin-left: 1em;
-	color: #666;
-	z-index: -10;
+
+
+	// @include transition-all();
+
+
+	// &:hover {
+	// 	color: #737373;
+	// }
+
+}
+
+.donna {
+	// display: block; // <<<
+	display: none; 
+
+	position: absolute;
+    top: 2em;
+
+    background-color: white;
+    padding: 0 .5em;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    border-radius: 0 0 5px 5px;
+
+    // box-shadow: 1px 1px 10px 10px #ccc;
+
+    a {
+    	text-decoration: none;
+    	color: #333;
+    }
+
+    &.caribbean {
+    	display: flex;
+    	width: 22em;
+    	margin-left: -16em;
+    }
+
+}
+
+.elizabeth {
+	display: flex;
+	margin: .5em .2em;
+	align-items: center;
+
+	@include transition-all-quick();
+
+	opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+
+	&:hover{
+		opacity: 1;
+    	filter: alpha(opacity=100); /* For IE8 and earlier */
+	}
+}
+
+.george {
+	font-weight: bold;
+
+}
+
+.helen {
+	margin-right: 1em;
+}
+
+.charles {
+	// color: #bfbfbf;
+
+	// &:hover {
+	// 	color: #333;
+	// }
+}
+
+.daniel {
+	// color: #bfbfbf;
+
+	// @include transition-all();
+ //    &:hover {
+ //    	color: #333;
+ //    }
+}
+
+.christopher {
+		
+	
 }

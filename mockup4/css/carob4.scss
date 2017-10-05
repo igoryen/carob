@@ -1,0 +1,522 @@
+//==============
+// DEBUG
+//===============
+
+///
+// .donna {
+// 	border: 5px solid #ccc;
+// 	margin: 1em;
+// }
+
+// .david {
+// 	border: 5px solid #808080;
+// 	margin: 1em;
+// }
+
+// .edward {
+// 	border: 5px solid #a6a6a6;
+// 	margin: 1em;
+// }
+
+//================
+// 	VARIABLES
+//================
+
+	$sprite-path: "../images/countries/flags3.png";
+	$countries: "../images/countries";
+	$logos: "../images/logos";
+
+//==============
+// MIXINS
+
+@mixin transition-all() {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+//============
+// GLOBAL
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+
+
+.donna {
+	display: flex;
+}
+
+.ui-widget * { outline: white !important; }
+
+.david {
+	// display: none;
+	display: flex;
+	margin-left: .5em;
+	// &:focus { outline:1px dotted red !important }
+}
+
+.brian {
+	display: flex;
+	// flex-direction: column;
+}
+.charles {
+	display: flex;
+	margin: .1em;
+	justify-content: flex-start;
+}
+
+.charles {
+	a {
+		align-items: center;
+		display: flex;
+		margin: .3em;
+		justify-content: flex-start;
+
+		text-decoration: none;
+		color: #999;
+		@include transition-all(); // added to the element itself rather than to the pseudo-class
+
+		&:hover {
+			color: #333;
+			
+		}
+	}
+}
+
+
+
+
+
+
+.logo-frame {
+	width: 200px;
+    height: 70px;
+    // transform: scale(0.8);
+
+    @include transition-all();
+    // &:hover {
+    // 	transform: scale(1.1);
+    	
+    // }
+}
+
+.logo-frame--large {
+	// height: 130px;
+	background: transparent no-repeat center;
+	background-size: cover;
+}
+
+@mixin opaque() {
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+}
+// .edward__nrs {
+// 	&:hover, &.ui-state-focus  {
+// 		background-image: url(../images/NAS_Bottom_Color-b.png);
+// 	}
+// }
+
+.logo-frame__nrs {
+	background-image: url(#{$logos}/nrs_logo.png);
+	
+	width: 160px;
+
+	@include opaque();
+
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+	
+}
+
+.logo-frame__nas {
+	background-image: url(#{$logos}/nas_logo.png);
+	width: 140px;
+
+	@include opaque();
+
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.logo-frame__hcs {
+	background-image: url(#{$logos}/hcs_logo.png);
+	width: 160px;
+
+	@include opaque();
+
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.logo-frame__ihusa {
+	background-image: url(#{$logos}/in_house_usa_logo.png);
+
+	@include opaque();
+
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.logo-frame__neuro {
+	background-image: url(#{$logos}/neuro_logo.jpg);
+	width: 130px;
+
+	@include opaque();
+
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+//======================
+// TABS
+//======================
+
+#tabs {
+	width: 600px;
+	display: flex;
+}
+.dorothy {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+// tablet with the logo on it.
+.deborah {
+
+    // box-shadow: inset -2px -1px 10px 0px #ccc;
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #d9d9d9;
+    border-left: 1px solid #d9d9d9;
+    border-radius: 10px 0 0 10px;
+    border-top: 1px solid #d9d9d9;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    margin: .2em 0 .2em 1em;
+    overflow: hidden; // image will not fly out of the frame when scaled
+    padding: .3em;
+    width: 13em;
+
+
+}
+
+.edward {
+	&.ui-state-active.ui-tabs-active {
+		.deborah {
+			border-right: none;
+			// background-color: #e6f2ff;
+			// box-shadow: inset 4px 0px 2px 0px #ccc;
+			// border-top: 1px solid #ccc;
+
+			// border-radius: 5px 0 0 5px;	
+			// border: none;
+			// box-shadow: -4px 0px 2px 1px #ccc;
+		}		
+	}
+}
+
+//==============
+
+.elizabeth {
+	border-left: 1px solid #d9d9d9;
+	border-radius: 5px 0 0 5px;
+}
+
+.carol {
+	// width: 13em;
+}
+
+.carol {
+	// display: flex;
+    // flex-direction: row;
+
+    width: 13em;
+
+    &.inhouse {
+    	flex-direction: row;
+    	img {
+    		width: 150px;
+    	}
+    }
+}
+
+
+//======================
+// COUNTRY BALLS
+//======================
+.christopher {	
+	box-shadow: 2px 2px 3px 0px #ccc;
+	display: inline-block;
+	height: 16px;
+	width: 32px;
+	margin-right: .8em;
+}
+
+.christopher__ai {
+	
+	background: url(#{$countries}/anguilla.png) -0px -0px;
+	background-size: 100% auto;
+
+}
+
+.christopher__bs {
+	
+	background: url($sprite-path) -360px 0px;
+	background-size: 490px auto;
+
+}
+
+.christopher__bb {
+	
+	background: url($sprite-path) -458px 0px;
+	background-size: 490px auto;
+
+}
+
+.christopher__bz {
+	
+	background: url($sprite-path) -65px -16.5px;
+	background-size: 490px auto;
+
+}
+
+.christopher__ca {
+	
+	background: url($sprite-path) -33px -33px;
+	background-size: 490px auto;
+
+}
+
+.christopher__ky {
+	
+	background: url(#{$countries}/cayman_islands.gif) -0px -0px;
+	background-size: 100% auto;
+
+}
+
+.christopher__cr {
+	
+	background: url($sprite-path) -262px 32.7px;
+	background-size: 490px auto;
+
+}
+
+.christopher__dm {
+	
+	background: url($sprite-path) -131px -49px;
+	background-size: 490px auto;
+
+}
+
+
+.christopher__gd {
+	
+	background: url($sprite-path) -262px -65.5px;
+	background-size: 490px auto;
+
+}
+
+.christopher__gy {
+	
+	background: url($sprite-path) -392px -65.5px;
+	background-size: 490px auto;
+
+}
+
+.christopher__ht {
+	
+	background: url($sprite-path) -425px -65.5px;
+	background-size: 490px auto;
+
+}
+
+.christopher__jm {
+	
+	background: url($sprite-path) -294px -82px;
+	background-size: 490px auto;
+
+}
+.christopher__mx {	
+	background: url($sprite-path) -294px -114.5px;
+	background-size: 490px auto;
+}
+
+.christopher__kn {	
+	background: url($sprite-path) 163px 65px;
+	background-size: 490px auto;
+}
+
+
+.christopher__lc {	
+	background: url($sprite-path) 130px 65px;
+	background-size: 490px auto;
+}
+
+.christopher__vc {	
+	background: url($sprite-path) 98px 65px;
+	background-size: 490px auto;
+}
+
+.christopher__tt {	
+	background: url($sprite-path) 130px 32.5px;
+	background-size: 490px auto;
+}
+
+.christopher__tc {	
+	background: url(#{$countries}/turks_and_caicos_islands.gif) -0px -0px;
+	background-size: 100% auto;
+}
+
+.christopher__vg {	
+	background: url(#{$countries}/british_virgin_islands.png) -0px -0px;
+	background-size: 100% auto;
+}
+
+
+
+
+
+
+
+.christopher__dk {
+	
+	background: url($sprite-path) -314px 0px;
+	background-size: 490px auto;
+
+}
+
+.christopher__ch {
+	
+	background: url($sprite-path)  -156px -58px;
+	background-size: 490px auto;
+
+}
+
+.christopher__ar {
+	
+	background: url($sprite-path)  -20px 0px;
+	background-size: 490px auto;
+
+}
+
+.christopher__au {
+	
+	background: url($sprite-path)  -39px 0px;
+	background-size: 490px auto;
+
+}
+.christopher__ad {
+	
+	background: url($sprite-path)  0px 0px;
+	background-size: 490px auto;
+
+}
+.christopher__br {
+	
+	background: url($sprite-path)  -118px 0px;
+	background-size: 490px auto;
+
+}
+.christopher__bg {
+	
+	background: url($sprite-path)  -137px 0px;
+	background-size: 490px auto;
+
+}
+.christopher__de {
+	
+	background: url($sprite-path)  -20px -19px;
+	background-size: 490px auto;
+
+}
+.christopher__gr {
+	
+	background: url($sprite-path) -39px -19px;
+	background-size: 490px auto;
+
+}
+.christopher__gt {
+	
+	background: url($sprite-path) -58px -19px;
+	background-size: 490px auto;
+
+}
+.christopher__hk {
+	
+	background: url($sprite-path) -137px -19px;
+	background-size: 490px auto;
+
+}
+.christopher__il {
+	
+	background: url($sprite-path) -236px -19px;
+	background-size: 490px auto;
+
+}
+.christopher__kr {
+	
+	background: url($sprite-path)  -373px -19px;
+	background-size: 490px auto;
+
+}
+.christopher__tw {
+	
+	background: url($sprite-path) -177px -58px;
+	background-size: 490px auto;
+
+}
+.christopher__tr {
+	
+	background: url($sprite-path) -216px -58px;
+	background-size: 490px auto;
+
+}
+.christopher__gb {
+	
+	background: url($sprite-path)  -255px -58px;
+	background-size: 490px auto;
+
+}
+.christopher__se {
+	
+	background: url($sprite-path)  -137px -58px;
+	background-size: 490px auto;
+
+}
+.christopher__vn {
+	
+	background: url($sprite-path) -353px -58px;
+	background-size: 490px auto;
+
+}
+.christopher__cm {
+	
+	background: url($sprite-path) -156px 0px;
+	background-size: 490px auto;
+
+}
+.christopher__jp {
+	
+	background: url($sprite-path) -314px -19px;
+	background-size: 490px auto;
+
+}
+.christopher__lv {
+	
+	background: url($sprite-path) -393px -19px;
+	background-size: 490px auto;
+
+}
+.christopher__sa {
+	
+	background: url($sprite-path) 0px -58px;
+	background-size: 490px auto;
+
+}

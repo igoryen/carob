@@ -1,0 +1,61 @@
+NAS: 
+	Anguilla, 
+	Antigua and Barbuda, 
+	Bahamas, 
+	Barbados, 
+	Belize, 
+	Canada, 
+	Cayman Islands, 
+	Costa Rica, 
+	Dominica, 
+	Grenada, 
+	Guyana
+	Haiti, 
+	Jamaica, 
+	Mexico, 
+	St. Kitts, 
+	St. Lucia, 
+	St. Vincent and the Grenadines, 
+	Trinidad and Tobago, 
+	Turs and Caicos, 
+	Virgin Islands, <-- what is its flag?
+
+NRS: 
+	Barbados, 
+	Canada, 
+	Grenada
+	Trinidad and Tobago, 
+
+
+не имию (имею, укр. нэ маю)
+я тебе этот автомат в очко затасую (засуну)
+
+== By region
+
+North America: 
+	Canada
+Latin America: 
+	Costa Rica, 
+	Mexico
+Caribbean: 
+	Anguilla, 
+	Antigua and Barbuda, 
+	Bahamas, 
+	Barbados, 
+	Belize, 
+	Cayman Islands, 
+	Dominica, 
+	Grenada, 
+	Guyana
+	Haiti, 
+	Jamaica, 
+	St. Kitts, 
+	St. Lucia, 
+	St. Vincent and the Grenadines, 
+	Trinidad and Tobago, 
+	Turks and Caicos, 
+	Virgin Islands, <-- what is its flag?
+
+
+
+

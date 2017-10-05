@@ -22,13 +22,10 @@ jQuery( document ).ready(function() {
 
 
     	// jQuery( this ).siblings(".brian").toggleClass("flex-on");
-    	jQuery( this ).children(".david").show( "slide", options, 700); // v1
+    	jQuery( this ).children(".david").show( "fold", options, 700); // v1
     	// jQuery( this ).siblings(".donald").hide(show_david( jQuery(this)), 100); // v2
     	// .find(".brian")
     	//.show( "slide", {direction: "right"}, 1000);
-
-        $( this ).find(".donna").hide( "fade", 100 );
-        $( this ).find( ".donald" ).css( "color", "#bfbfbf" );
     	
     });
 
@@ -48,50 +45,7 @@ jQuery( document ).ready(function() {
     	// .find(".brian")
     	//.show( "slide", {direction: "right"}, 1000);
 
-
-
-        $( this ).find(".donna").hide( "fade", 100 );
     });
-
-    jQuery(".charles").on( "mouseenter", function() {
-        // alert("yes")
-        // $( this ).siblings().find(".donna").hide( "fade", 100 );
-
-        
-
-        $( this ).find( ".donald" ).css( "color", "#333" );
-
-        $( this ).find(".donna").show( "blind" , 500);
-    });
-
-    jQuery(".charles").on( "mouseleave", function( e ) {
-        
-
-        var $this = $(this);
-
-        var bottom = $this.offset().top + $this.outerHeight();
-
-        // if the mouse leaves through the top or through the sides
-        if( !(e.pageY >= bottom) ) {
-            $( this ).find(".donna").hide( "fade", 100 );
-            $( this ).find( ".donald" ).css( "color", "#bfbfbf" );
-        }
-    });
-
-    jQuery(".donna").on( "mouseleave", function() {
-        // alert("yes")
-        $( this ).hide( "fade", 100 );
-        $( this ).parents().find(".donna").hide( "fade", 100 );
-
-        // $( this ).children(".donna").show( "blind" , 400);
-    });
-
-    // jQuery(".donna").on( "mouseenter", function() {
-    //     alert("yes")
-    //     $( this ).parents().find(".donna").hide( "fade", 100 );
-    //     // $( this ).children(".donna").show( "blind" , 400);
-    // });
-        
 
 
 });
